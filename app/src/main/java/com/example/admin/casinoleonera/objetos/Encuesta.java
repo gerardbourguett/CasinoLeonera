@@ -1,6 +1,5 @@
 package com.example.admin.casinoleonera.objetos;
 
-import android.widget.EditText;
 import android.widget.TextView;
 
 /**
@@ -8,24 +7,25 @@ import android.widget.TextView;
  */
 
 public class Encuesta {
-    Float servicio, atencion;
-    String sugerencia;
+    private Float servicio_nota;
+    private Float atencion;
+    private String sugerencia;
 
-    public Encuesta(TextView servicio, TextView atencion, EditText sugerencia) {
+    public Encuesta() {
     }
 
-    public Encuesta(Float servicio, Float atencion, String sugerencia) {
-        this.servicio = servicio;
+    public Encuesta(Float servicio_nota, Float atencion, String sugerencia) {
+        this.servicio_nota = servicio_nota;
         this.atencion = atencion;
         this.sugerencia = sugerencia;
     }
 
-    public Float getServicio() {
-        return servicio;
+    public Float getServicio_nota() {
+        return servicio_nota;
     }
 
-    public void setServicio(Float servicio) {
-        this.servicio = servicio;
+    public void setServicio_nota(Float servicio_nota) {
+        this.servicio_nota = servicio_nota;
     }
 
     public Float getAtencion() {

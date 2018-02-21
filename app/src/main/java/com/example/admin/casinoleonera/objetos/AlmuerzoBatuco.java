@@ -9,12 +9,11 @@ import android.widget.TextView;
 public class AlmuerzoBatuco {
     String t_entrada, t_ensalada1, t_ensalada2, t_principal, t_alternativo, t_hipocalorico, t_postre1, t_postre2;
 
-    public AlmuerzoBatuco(TextView t_entrada, TextView t_ensalada1, TextView t_ensalada2,
-                          TextView t_principal, TextView t_alternativo, TextView t_hipocalorico,
-                          TextView t_postre1, TextView t_postre2) {
+    public AlmuerzoBatuco() {
     }
 
-    public AlmuerzoBatuco(String t_entrada, String t_ensalada1, String t_ensalada2, String t_principal, String t_alternativo, String t_hipocalorico, String t_postre1, String t_postre2) {
+    public AlmuerzoBatuco(String t_entrada, String t_ensalada1, String t_ensalada2, String t_principal,
+                          String t_alternativo, String t_hipocalorico, String t_postre1, String t_postre2) {
         this.t_entrada = t_entrada;
         this.t_ensalada1 = t_ensalada1;
         this.t_ensalada2 = t_ensalada2;
@@ -87,5 +86,19 @@ public class AlmuerzoBatuco {
 
     public void setT_postre2(String t_postre2) {
         this.t_postre2 = t_postre2;
+    }
+
+    @Override
+    public String toString() {
+        return "AlmuerzoBatuco{" +
+                "t_entrada='" + t_entrada + '\'' +
+                ", t_ensalada1='" + t_ensalada1 + '\'' +
+                ", t_ensalada2='" + t_ensalada2 + '\'' +
+                ", t_principal='" + t_principal + '\'' +
+                ", t_alternativo='" + t_alternativo + '\'' +
+                ", t_hipocalorico='" + t_hipocalorico + '\'' +
+                ", t_postre1='" + t_postre1 + '\'' +
+                ", t_postre2='" + t_postre2 + '\'' +
+                '}';
     }
 }
