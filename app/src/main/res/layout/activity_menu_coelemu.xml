@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomenu"
+    tools:context="com.example.admin.casinoleonera.MenuCoelemuActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/t_postre2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/co_volver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/postre_2"
+        app:layout_constraintTop_toBottomOf="@+id/t_postre"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/t_postre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/t_postre2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/postre_1"
+        app:layout_constraintTop_toBottomOf="@+id/t_hipocalorico"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/t_hipocalorico"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/t_postre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hipocalorico"
+        app:layout_constraintTop_toBottomOf="@+id/t_alternativo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/t_alternativo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/t_hipocalorico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plato_alternativo"
+        app:layout_constraintTop_toBottomOf="@+id/t_platofondo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/t_platofondo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/t_alternativo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plato_fondo"
+        app:layout_constraintTop_toBottomOf="@+id/t_ensalada2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/t_ensalada2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/t_platofondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ensalada_2"
+        app:layout_constraintTop_toBottomOf="@+id/t_ensalada1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/t_ensalada1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/t_ensalada2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ensalada_1"
+        app:layout_constraintTop_toBottomOf="@+id/t_entrada"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/entrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginStart="70dp"
+        android:text="ENTRADA:"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/ensalada_1"
+        app:layout_constraintEnd_toStartOf="@+id/t_entrada"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ensalada_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginStart="50dp"
+        android:text="ENSALADA 1:"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/ensalada_2"
+        app:layout_constraintEnd_toStartOf="@+id/t_ensalada1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ensalada_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginStart="50dp"
+        android:text="ENSALADA 2:"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/plato_fondo"
+        app:layout_constraintEnd_toStartOf="@+id/t_ensalada2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/plato_fondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="38dp"
+        android:text="PLATO FONDO:"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/plato_alternativo"
+        app:layout_constraintEnd_toStartOf="@+id/t_platofondo"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/plato_alternativo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="40dp"
+        android:text="ALTERNATIVO:"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/hipocalorico"
+        app:layout_constraintEnd_toStartOf="@+id/t_alternativo"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/hipocalorico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="33dp"
+        android:text="HIPOCALORICO:"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/postre_1"
+        app:layout_constraintEnd_toStartOf="@+id/t_hipocalorico"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/postre_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="76dp"
+        android:text="POSTRE :"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/postre_2"
+        app:layout_constraintEnd_toStartOf="@+id/t_postre"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/postre_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="68dp"
+        android:text="POSTRE 2:"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toStartOf="@+id/t_postre2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/t_postre2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/m_coelemu"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="47dp"
+        android:layout_marginTop="34dp"
+        android:text="MENU CASINO COELEMU"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/t_entrada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/t_entrada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/t_ensalada1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/entrada"
+        app:layout_constraintTop_toBottomOf="@+id/m_coelemu"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/co_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:layout_marginStart="11dp"
+        android:text="VOLVER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/postre_2"
+        app:layout_constraintTop_toBottomOf="@+id/t_postre2"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>
