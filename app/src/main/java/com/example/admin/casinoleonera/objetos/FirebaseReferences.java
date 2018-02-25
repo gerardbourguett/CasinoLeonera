@@ -5,6 +5,7 @@ package com.example.admin.casinoleonera.objetos;
  */
 
 public class FirebaseReferences {
+    final public static String APP_REFERENCE = "app";
     final public static String ENCUESTA_REFERENCE = "Encuesta";
     final public static String ALMUERZOBATUCO_REFERENCE = "AlmuerzoBatuco";
     final public static String ALMUERZOCOELEMU_REFERENCE = "AlmuerzoCoelemu";

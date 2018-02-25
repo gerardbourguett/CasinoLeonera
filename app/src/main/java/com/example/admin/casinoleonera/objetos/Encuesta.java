@@ -8,16 +8,11 @@ import android.widget.TextView;
  */
 
 public class Encuesta {
-    Float servicio, atencion;
+    Float servicio;
+    Float atencion;
     String sugerencia;
 
-    public Encuesta(TextView servicio, TextView atencion, EditText sugerencia) {
-    }
-
-    public Encuesta(Float servicio, Float atencion, String sugerencia) {
-        this.servicio = servicio;
-        this.atencion = atencion;
-        this.sugerencia = sugerencia;
+    public Encuesta(double v, double v1, String s) {
     }
 
     public Float getServicio() {

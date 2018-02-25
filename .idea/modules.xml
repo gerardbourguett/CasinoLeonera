@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CasinoLeonera.iml" filepath="$PROJECT_DIR$/CasinoLeonera.iml" />
-      <module fileurl="file://C:\Users\Gerard\Downloads\PrototipoLeonera-master\PrototipoLeonera-master\CasinoLeonera\CasinoLeonera.iml" filepath="C:\Users\Gerard\Downloads\PrototipoLeonera-master\PrototipoLeonera-master\CasinoLeonera\CasinoLeonera.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\Gerard\Downloads\PrototipoLeonera-master\PrototipoLeonera-master\CasinoLeonera\app\app.iml" filepath="C:\Users\Gerard\Downloads\PrototipoLeonera-master\PrototipoLeonera-master\CasinoLeonera\app\app.iml" />
     </modules>
   </component>
 </project>

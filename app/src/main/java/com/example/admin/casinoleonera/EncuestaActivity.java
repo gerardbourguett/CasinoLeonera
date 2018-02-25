@@ -2,6 +2,7 @@ package com.example.admin.casinoleonera;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,8 +12,11 @@ import android.widget.Toast;
 
 import com.example.admin.casinoleonera.objetos.Encuesta;
 import com.example.admin.casinoleonera.objetos.FirebaseReferences;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class EncuestaActivity extends Activity {
 
@@ -34,8 +38,6 @@ public class EncuestaActivity extends Activity {
         atencion = findViewById(R.id.nRatingText);
         sugerencia = findViewById(R.id.editText2);
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference myref = database.getReference(FirebaseReferences.ENCUESTA_REFERENCE);
 
         mRatingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
@@ -51,16 +53,16 @@ public class EncuestaActivity extends Activity {
             }
         });
 
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final DatabaseReference myRef = database.getReference(FirebaseReferences.ENCUESTA_REFERENCE);
+
         enviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Encuesta encuesta = new Encuesta(servicio, atencion, sugerencia);
-                myref.child(FirebaseReferences.ENCUESTA_REFERENCE).push().setValue(encuesta);
+                Encuesta encuesta = new Encuesta(3.5, 4.0,"Me gusta mucho");
+                myRef.child(FirebaseReferences.ENCUESTA_REFERENCE).push().setValue(encuesta);
                 Toast.makeText(getApplicationContext(), "Enviado!!", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
-
-
 }
