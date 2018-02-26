@@ -37,39 +37,6 @@
                 tools:layout_editor_absoluteX="100dp"
                 tools:layout_editor_absoluteY="29dp" />
 
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="25dp"
-                android:checkedButton="@+id/rb_batuco"
-                android:gravity="center">
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="serif"
-                    android:text="Ubicacion Planta Casino"
-                    android:textAlignment="center"
-                    android:textColor="@color/primaryTextColor"
-                    android:textSize="18sp" />
-
-                <RadioButton
-                    android:id="@+id/rb_batuco"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Batuco" />
-
-                <RadioButton
-                    android:id="@+id/rb_coelemu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Coelemu" />
-            </RadioGroup>
-
             <TextView
                 android:id="@+id/p_1"
                 android:layout_width="match_parent"
@@ -82,25 +49,18 @@
                 tools:layout_editor_absoluteY="75dp" />
 
             <RatingBar
-                android:id="@+id/ratingBar"
+                android:id="@+id/mRatingBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:numStars="5"
                 android:rating="2.5"
+                android:stepSize="0.5"
                 tools:layout_editor_absoluteX="70dp"
                 tools:layout_editor_absoluteY="100dp" />
 
-            <EditText
-                android:id="@+id/mRatingText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="40dp"
-                android:gravity="center"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/textView2"
+            <TextView
+                android:id="@+id/p_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="50dp"
@@ -111,7 +71,7 @@
                 tools:layout_editor_absoluteY="210dp" />
 
             <RatingBar
-                android:id="@+id/ratingBar2"
+                android:id="@+id/nRatingBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
@@ -120,16 +80,8 @@
                 tools:layout_editor_absoluteX="70dp"
                 tools:layout_editor_absoluteY="265dp" />
 
-            <EditText
-                android:id="@+id/nRatingText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="40dp"
-                android:gravity="center"
-                android:textStyle="bold" />
-
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/p_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -140,7 +92,7 @@
                 tools:layout_editor_absoluteY="348dp" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/t_comen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="45dp"

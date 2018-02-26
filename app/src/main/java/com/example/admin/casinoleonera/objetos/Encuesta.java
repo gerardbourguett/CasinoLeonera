@@ -12,7 +12,13 @@ public class Encuesta {
     Float atencion;
     String sugerencia;
 
-    public Encuesta(double v, double v1, String s) {
+    public Encuesta() {
+    }
+
+    public Encuesta(Float servicio, Float atencion, String sugerencia) {
+        this.servicio = servicio;
+        this.atencion = atencion;
+        this.sugerencia = sugerencia;
     }
 
     public Float getServicio() {
@@ -37,5 +43,14 @@ public class Encuesta {
 
     public void setSugerencia(String sugerencia) {
         this.sugerencia = sugerencia;
+    }
+
+    @Override
+    public String toString() {
+        return "Encuesta{" +
+                "servicio=" + servicio +
+                ", atencion=" + atencion +
+                ", sugerencia='" + sugerencia + '\'' +
+                '}';
     }
 }
