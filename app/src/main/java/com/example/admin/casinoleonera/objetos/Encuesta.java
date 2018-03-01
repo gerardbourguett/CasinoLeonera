@@ -1,13 +1,13 @@
 package com.example.admin.casinoleonera.objetos;
 
-import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.RadioButton;
 
 /**
  * Created by admin on 20-02-2018.
  */
 
 public class Encuesta {
+    String planta;
     Float servicio;
     Float atencion;
     String sugerencia;
@@ -15,10 +15,19 @@ public class Encuesta {
     public Encuesta() {
     }
 
-    public Encuesta(Float servicio, Float atencion, String sugerencia) {
+    public Encuesta(String planta, Float servicio, Float atencion, String sugerencia) {
+        this.planta = String.valueOf(planta);
         this.servicio = servicio;
         this.atencion = atencion;
         this.sugerencia = sugerencia;
+    }
+
+    public String getPlanta() {
+        return planta;
+    }
+
+    public void setPlanta(String planta) {
+        this.planta = planta;
     }
 
     public Float getServicio() {
@@ -48,7 +57,8 @@ public class Encuesta {
     @Override
     public String toString() {
         return "Encuesta{" +
-                "servicio=" + servicio +
+                "planta='" + planta + '\'' +
+                ", servicio=" + servicio +
                 ", atencion=" + atencion +
                 ", sugerencia='" + sugerencia + '\'' +
                 '}';

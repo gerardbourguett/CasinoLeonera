@@ -38,6 +38,37 @@
                 tools:layout_editor_absoluteY="29dp" />
 
             <TextView
+                android:id="@+id/planta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Planta" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+
+                <RadioButton
+                    android:id="@+id/rbBatuco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Batuco" />
+
+                <RadioButton
+                    android:id="@+id/rbCoelemu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Coelemu" />
+            </RadioGroup>
+
+            <TextView
                 android:id="@+id/p_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -55,9 +86,16 @@
                 android:layout_marginBottom="5dp"
                 android:numStars="5"
                 android:rating="2.5"
-                android:stepSize="0.5"
                 tools:layout_editor_absoluteX="70dp"
                 tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/mRatingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/p_2"
@@ -81,7 +119,15 @@
                 tools:layout_editor_absoluteY="265dp" />
 
             <TextView
-                android:id="@+id/p_2"
+                android:id="@+id/nRatingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sugerencia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -113,6 +159,7 @@
                 android:text="VOLVER"
                 tools:layout_editor_absoluteX="148dp"
                 tools:layout_editor_absoluteY="447dp" />
+
         </LinearLayout>
     </ScrollView>
 

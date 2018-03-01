@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
@@ -19,6 +21,8 @@ public class EncuestaActivity extends Activity {
     private RatingBar mRatingBar, nRatingBar;
     private EditText sugerencia;
     private Button enviar, cancelar;
+    private RadioGroup planta;
+    private RadioButton seleccion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +34,7 @@ public class EncuestaActivity extends Activity {
         sugerencia = findViewById(R.id.t_comen);
         enviar = findViewById(R.id.en_enviar);
         cancelar = findViewById(R.id.en_volver);
+        planta = findViewById(R.id.radioGroup);
 
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -37,24 +42,26 @@ public class EncuestaActivity extends Activity {
 
         mRatingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
-            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-                Toast.makeText(EncuestaActivity.this, "Servicio: " + mRatingBar.getRating(), Toast.LENGTH_SHORT).show();
-            }
+            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {    }
         });
 
         nRatingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
-            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-                Toast.makeText(EncuestaActivity.this, "Atencion: " + nRatingBar.getRating(), Toast.LENGTH_SHORT).show();
-            }
+            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {    }
         });
 
         enviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Encuesta encuesta = new Encuesta (mRatingBar.getRating(), nRatingBar.getRating() , sugerencia.getText().toString());
+                int radioId = planta.getCheckedRadioButtonId();
+
+                seleccion = findViewById(radioId);
+
+                Encuesta encuesta = new Encuesta (seleccion.getText().toString(), mRatingBar.getRating(), nRatingBar.getRating() , sugerencia.getText().toString());
                 encuestaRef.child(FirebaseReferences.ENCUESTA_REFERENCE).push().setValue(encuesta);
-                Toast.makeText(EncuestaActivity.this, "Datos Enviados. Presiona Volver para salir de la Encuesta", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EncuestaActivity.this, "Datos Enviados.", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(EncuestaActivity.this , HomeActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -66,7 +73,12 @@ public class EncuestaActivity extends Activity {
             }
         });
 
-
-
     }
+
+    public void checkButton(View v){
+        int radioId = planta.getCheckedRadioButtonId();
+
+        seleccion = findViewById(radioId);
+    }
+
 }
