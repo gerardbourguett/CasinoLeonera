@@ -144,7 +144,9 @@
                 android:layout_marginBottom="45dp"
                 android:layout_marginTop="20dp"
                 android:ems="500"
-                android:inputType="textMultiLine" />
+                android:inputType="textMultiLine"
+                android:gravity="center"
+                android:text="Escribe tu comentario aquí" />
 
             <Button
                 android:id="@+id/en_enviar"
